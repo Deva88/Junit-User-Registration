@@ -17,7 +17,7 @@ public class UserRegistrationTest {
 
     @Test
     //create method lNValidation()
-    public void lNValidation() {
+    public void lNValidation()        {
         Assert.assertTrue(ur.lastName("Kumar"));
     }
 
