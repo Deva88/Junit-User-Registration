@@ -10,6 +10,7 @@ public class UserRegistrationTest {
 
 
     @Test
+    //create method
     public void fNValidation() {
         Assert.assertTrue(ur.firstName("Devendra"));
     }
