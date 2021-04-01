@@ -5,14 +5,14 @@ import java.util.regex.Pattern;
 public class UserRegistration {
 
     /*UC1 - First name starts with Cap and has minimum 3 characters
-     * @Description- class checks the First Name for a user registration
+     * @Description- checks the First Name for registration
      * a name is valid or not
      */
     public boolean firstName(String fN) {
         return (Pattern.matches("^[A-Z]{1}[a-z]{2,}$", fN) == true);
     }
     /*UC2 -Last Name Starts with cap and has minimum 3 characters
-     *@description- last name of user
+     *@description- Check last name for registration a name is valid or not
      *@return string:- return the last name
      */
     public boolean lastName(String lN) {
@@ -21,7 +21,7 @@ public class UserRegistration {
 
     /*UC 3 - enter a valid email
      *@description-checking email is in correct form or not
-     * @return string:- return the eamil id for validation
+     * @return string:- return the emil id for validation
      * E.g. abc.xyz@bl.co.in - Email has 3 mandatory parts (abc, bl & co)
      */
     public boolean email(String emailId) {
