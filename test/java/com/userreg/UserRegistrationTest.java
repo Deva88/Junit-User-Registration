@@ -21,4 +21,10 @@ public class UserRegistrationTest {
         Assert.assertTrue(ur.lastName("Kumar"));
     }
 
+    @Test
+    //create method emailValidation()
+    public void emailValidation() {
+        Assert.assertTrue(ur.email("devendra.raj.sdm@gmail.com"));
+    }
+
 }
