@@ -11,6 +11,11 @@ public class UserRegistration {
      */
     public boolean firstName(String fN) {
         return (Pattern.matches("^[A-Z]{1}[a-z]{2,}$", fN) == true);
-
+    }
+    //UC2 -Last Name Starts with cap and has minimum 3 characters
+    /*@description- last name of user
+     * @return string:- return the last name*/
+    public boolean lastName(String lN) {
+        return (Pattern.matches("^[A-Z]{1}[a-z]{2,}$", lN) == true);
     }
 }
