@@ -35,4 +35,13 @@ public class UserRegistration {
     public boolean mobile(String mobileNum) {
         return(Pattern.matches("(0|91)?\\s{1}[6-9][0-9]{9}", mobileNum) == true);
     }
+
+    /* UC 5 Password
+     *@description: checking Password by regular expression
+     *check Password minimum 8 Character using regular expression
+     */
+    public boolean password(String pass) {
+        return (Pattern.matches("[A-Z0-9a-z$%&*@!#]{8,}", pass) == true);
+    }
+
 }

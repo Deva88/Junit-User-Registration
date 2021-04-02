@@ -31,4 +31,8 @@ public class UserRegistrationTest {
     public void mobileValidation() {
         Assert.assertTrue(ur.mobile("91 8123273639"));
     }
+    @Test
+    public void passwordValidation() {
+        Assert.assertTrue(ur.password("d@8123273639"));
+    }
 }
