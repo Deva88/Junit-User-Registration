@@ -34,11 +34,16 @@ public class UserRegistrationTest {
     @Test
     //create method passwordValidation()
     public void passwordValidation() {
-        Assert.assertTrue(ur.password("d@8123273639"));
+        Assert.assertTrue(ur.password("devendrapassword"));
     }
     @Test
     //create method passwordValidationRule2()
     public void passwordValidationRule2() {
-        Assert.assertTrue(ur.passwordRule2("Dev@8123273639"));
+        Assert.assertTrue(ur.passwordRule2("devendraPassword"));
+    }
+    @Test
+    //create method passwordValidationRule3()
+    public void passwordValidationRule3() {
+        Assert.assertTrue(ur.passwordRule3("devendra5Password"));
     }
 }
