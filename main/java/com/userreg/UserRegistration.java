@@ -9,14 +9,14 @@ public class UserRegistration {
      * a name is valid or not
      */
     public boolean firstName(String fN) {
-        return (Pattern.matches("^[A-Z]{1}[a-z]{2,}$", fN) == true);
+        return (Pattern.matches("^[A-Z]{1}[a-z]{3,}$", fN) == true);
     }
     /*UC2 -Last Name Starts with cap and has minimum 3 characters
      *@description- Check last name for registration a name is valid or not
      *@return string:- return the last name
      */
     public boolean lastName(String lN) {
-        return (Pattern.matches("^[A-Z]{1}[a-z]{2,}$", lN) == true);
+        return (Pattern.matches("^[A-Z]{1}[a-z]{3,}$", lN) == true);
     }
 
     /*UC 3 - enter a valid email
