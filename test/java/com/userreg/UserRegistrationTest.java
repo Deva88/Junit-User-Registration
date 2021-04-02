@@ -41,9 +41,16 @@ public class UserRegistrationTest {
     public void passwordValidationRule2() {
         Assert.assertTrue(ur.passwordRule2("devendraPassword"));
     }
+
     @Test
     //create method passwordValidationRule3()
     public void passwordValidationRule3() {
         Assert.assertTrue(ur.passwordRule3("devendra5Password"));
+    }
+
+    @Test
+    //create method passwordValidationRule4()
+    public void passwordValidationRule4() {
+        Assert.assertTrue(ur.passwordRule4("devendra5@Password"));
     }
 }

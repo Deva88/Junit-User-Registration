@@ -61,4 +61,16 @@ public class UserRegistration {
     public boolean passwordRule3(String pass) {
         return ((Pattern.matches("[A-Z0-9a-z$%&*@!#]{8,}", pass) && Pattern.matches(".*[A-Z].*", pass) && Pattern.matches(".*[0-9].*", pass)) == true);
     }
+
+    /* UC 8 Password (All rule must be passed)
+     *@description: checking Password by regular expression
+     *check Password minimum 8 Character using regular expression
+     * Should have at least 1 Upper Case
+     * Should have at least 1 numeric number
+     * 1 Special Character
+     */
+    public boolean passwordRule4(String pass) {
+        return ((Pattern.matches("[A-Z0-9a-z$%&*@!#]{8,}", pass) && Pattern.matches(".*[A-Z].*", pass) && Pattern.matches(".*[0-9].*", pass) && Pattern.matches(".*[\\W]{1}.*", pass)) == true);
+    }
+
 }
