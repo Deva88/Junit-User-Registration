@@ -32,7 +32,13 @@ public class UserRegistrationTest {
         Assert.assertTrue(ur.mobile("91 8123273639"));
     }
     @Test
+    //create method passwordValidation()
     public void passwordValidation() {
         Assert.assertTrue(ur.password("d@8123273639"));
+    }
+    @Test
+    //create method passwordValidationRule2()
+    public void passwordValidationRule2() {
+        Assert.assertTrue(ur.passwordRule2("Dev@8123273639"));
     }
 }

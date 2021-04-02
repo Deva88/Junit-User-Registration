@@ -36,12 +36,20 @@ public class UserRegistration {
         return(Pattern.matches("(0|91)?\\s{1}[6-9][0-9]{9}", mobileNum) == true);
     }
 
-    /* UC 5 Password
+    /* UC 5 Password (Rule-1)
      *@description: checking Password by regular expression
      *check Password minimum 8 Character using regular expression
      */
     public boolean password(String pass) {
         return (Pattern.matches("[A-Z0-9a-z$%&*@!#]{8,}", pass) == true);
+    }
+    /* UC 6 Password (All rule-1 must be passed)
+     *@description: checking Password by regular expression
+     *check Password minimum 8 Character using regular expression
+     * Should have at least 1 Upper Case
+     */
+    public boolean passwordRule2(String pass) {
+        return ((Pattern.matches("[A-Z0-9a-z$%&*@!#]{8,}", pass) && Pattern.matches(".*[A-Z].*", pass)) == true);
     }
 
 }
