@@ -26,5 +26,9 @@ public class UserRegistrationTest {
     public void emailValidation() {
         Assert.assertTrue(ur.email("devendra.raj.sdm@gmail.com"));
     }
-
+    @Test
+    //create method mobileValidation()
+    public void mobileValidation() {
+        Assert.assertTrue(ur.mobile("91 8123273639"));
+    }
 }

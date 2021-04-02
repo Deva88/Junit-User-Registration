@@ -28,4 +28,11 @@ public class UserRegistration {
         return (Pattern.matches("[a-zA-Z0-9][a-zA-Z0-9_.]*@[a-zA-Z0-9]+([.][a-zA-Z]+)+", emailId) == true);
     }
 
+    /* UC4 - Mobile Format
+     *@description: class to checking user Phone Number by regular expression
+     *check Phone Number is valid with country code using regular expression
+     */
+    public boolean mobile(String mobileNum) {
+        return(Pattern.matches("(0|91)?\\s{1}[6-9][0-9]{9}", mobileNum) == true);
+    }
 }
