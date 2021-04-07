@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.userregistration.UserRegistrationTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-04-07T23:54:01" hostname="SHRI" time="0.064">
+  <properties/>
+  <testcase name="passwordValidation()" classname="com.userregistration.UserRegistrationTest" time="0.036"/>
+  <testcase name="mobileValidation()" classname="com.userregistration.UserRegistrationTest" time="0.003"/>
+  <testcase name="givenString_whenEntered_shouldReturnSad()" classname="com.userregistration.UserRegistrationTest" time="0.005"/>
+  <testcase name="fNValidation()" classname="com.userregistration.UserRegistrationTest" time="0.002"/>
+  <testcase name="lNValidation()" classname="com.userregistration.UserRegistrationTest" time="0.002"/>
+  <testcase name="emailValidation()" classname="com.userregistration.UserRegistrationTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
